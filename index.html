@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СферИТ - Разработка и производство оборудования</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__left">
+            <a href="/" class="header__logo">
+              <img
+                src="images/logo.png"
+                alt="СферИТ"
+                class="header__logo-img"
+              />
+            </a>
+            <div class="header__subtitle">
+              Разработчик и производитель<br />оборудования для систем
+              безопасности,<br />автоматизации и диспетчеризации
+            </div>
+          </div>
+
+          <div class="header__center">
+            <div class="header__search">
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="Поиск по сайту"
+              />
+              <button class="header__search-btn" aria-label="Поиск">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <a href="#" class="header__search-mobile">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.7498 15.7498L12.4873 12.4873"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="header__profile">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M16.6666 17.5V15.8333C16.6666 14.9493 16.3155 14.1014 15.6903 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66665C5.78259 12.5 4.93474 12.8512 4.30962 13.4763C3.6845 14.1014 3.33331 14.9493 3.33331 15.8333V17.5M13.3333 5.83333C13.3333 7.67428 11.8409 9.16667 9.99998 9.16667C8.15903 9.16667 6.66665 7.67428 6.66665 5.83333C6.66665 3.99238 8.15903 2.5 9.99998 2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <button class="header__burger" aria-label="Меню">
+              <span class="header__burger-line"></span>
+            </button>
+          </div>
+
+          <div class="header__right">
+            <a href="tel:+79161578274" class="header__phone"
+              >+7 916 157-82-74</a
+            >
+            <a href="mailto:info@sferit.com" class="header__email"
+              >info@sferit.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="header__nav-wrapper">
+        <div class="container">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a href="#" class="header__nav-link">Продукты и решения</a>
+              </li>
+              <li>
+                <a href="#" class="header__nav-link">Поддержка и гарантия</a>
+              </li>
+              <li><a href="#" class="header__nav-link">Документация</a></li>
+              <li><a href="#" class="header__nav-link">Проекты</a></li>
+              <li><a href="#" class="header__nav-link">Новости</a></li>
+              <li><a href="#" class="header__nav-link">Партнерам</a></li>
+              <li><a href="#" class="header__nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__header">
+        <a href="/" class="header__logo">
+          <img src="images/logo.png" alt="СферИТ" class="header__logo-img" />
+        </a>
+        <div class="header__center">
+          <a href="#" class="header__search-mobile">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.7498 15.7498L12.4873 12.4873"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#" class="header__profile">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 15.75C15 14.5074 15 13.8862 14.8478 13.3977C14.5645 12.5265 13.8737 11.8357 13.0025 11.5524C12.514 11.4002 11.8928 11.4002 10.6503 11.4002H7.34978C6.10731 11.4002 5.48509 11.4002 4.99658 11.5524C4.12546 11.8357 3.43462 12.5265 3.15108 13.3977C3 13.8862 3 14.5074 3 15.75M12.4984 6.00003C12.4984 7.9881 10.8879 9.59998 8.89992 9.59998C6.91194 9.59998 5.30145 7.9881 5.30145 6.00003C5.30145 4.01196 6.91194 2.40008 8.89992 2.40008C10.8879 2.40008 12.4984 4.01196 12.4984 6.00003Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <button class="mobile-menu__close" aria-label="Закрыть меню">
+            <span class="mobile-menu__close-line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__subtitle">
+          Разработка и производство оборудования для систем безопасности,
+          автоматизации и диспетчеризации
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link">
+                Продукты и решения
+                <svg
+                  class="mobile-menu__nav-arrow"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link">
+                Поддержка и гарантия
+              </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link"> Документация </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link"> Проекты </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link"> Новости </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link"> Партнерам </a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contacts">
+          <a href="tel:+79161578274" class="mobile-menu__phone"
+            >+7 916 157-82-74</a
+          >
+          <a href="mailto:info@sferit.com" class="mobile-menu__email"
+            >info@sferit.com</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Создаем
+            <span class="hero__title-accent"
+              >и обеспечиваем<br />бесперебойную работу</span
+            ><br />
+            <span class="hero__title-accent-small"
+              >вашей ИТ-инфраструктуры</span
+            >
+          </h1>
+
+          <div class="hero__content">
+            <div class="hero__left">
+              <p class="hero__description">
+                Разработчик и производитель оборудования<br />
+                для систем безопасности, автоматизации и<br />
+                диспетчеризации
+              </p>
+              <button type="submit" class="contact__submit">
+                <span class="contact__submit-text">Подробнее</span>
+                <span class="contact__submit-icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3.33334 8H12.6667M12.6667 8L8.66667 4M12.6667 8L8.66667 12"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="hero__slider">
+              <div class="hero__slide active">
+                <div class="hero__product">
+                  <img
+                    src="images/h1.png"
+                    alt="SFX14000-8SRV-12U"
+                    class="hero__product-img"
+                  />
+                  <div class="hero__product-info">
+                    <h3 class="hero__product-title">SFX14000-8SRV-12U</h3>
+                    <p class="hero__product-description">
+                      Небольшое описание оборудования<br />в пару строк
+                    </p>
+                    <a href="#" class="hero__product-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slide">
+                <div class="hero__product">
+                  <img
+                    src="images/h1.png"
+                    alt="SFX14000-8SRV-12U"
+                    class="hero__product-img"
+                  />
+                  <div class="hero__product-info">
+                    <h3 class="hero__product-title">SFX12000-8SRV-10U</h3>
+                    <p class="hero__product-description">
+                      Сетевое оборудование для<br />корпоративных решений
+                    </p>
+                    <a href="#" class="hero__product-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slide">
+                <div class="hero__product">
+                  <img
+                    src="images/h1.png"
+                    alt="SFX14000-8SRV-12U"
+                    class="hero__product-img"
+                  />
+                  <div class="hero__product-info">
+                    <h3 class="hero__product-title">SFX10000-4SRV-8U</h3>
+                    <p class="hero__product-description">
+                      Высокопроизводительное решение<br />для систем
+                      видеонаблюдения
+                    </p>
+                    <a href="#" class="hero__product-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slide">
+                <div class="hero__product">
+                  <img
+                    src="images/h1.png"
+                    alt="SFX14000-8SRV-12U"
+                    class="hero__product-img"
+                  />
+                  <div class="hero__product-info">
+                    <h3 class="hero__product-title">SFX8000-6SRV-6U</h3>
+                    <p class="hero__product-description">
+                      Компактное решение для<br />небольших инфраструктур
+                    </p>
+                    <a href="#" class="hero__product-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slide">
+                <div class="hero__product">
+                  <img
+                    src="images/h1.png"
+                    alt="SFX14000-8SRV-12U"
+                    class="hero__product-img"
+                  />
+                  <div class="hero__product-info">
+                    <h3 class="hero__product-title">SFX16000-10SRV-14U</h3>
+                    <p class="hero__product-description">
+                      Максимальная производительность<br />для больших систем
+                    </p>
+                    <a href="#" class="hero__product-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slider-nav">
+                <button
+                  class="hero__slider-arrow hero__slider-arrow--prev"
+                  aria-label="Предыдущий слайд"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M15 18L9 12L15 6"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="hero__slider-dots">
+                  <button
+                    class="hero__slider-dot active"
+                    aria-label="Слайд 1"
+                  ></button>
+                  <button
+                    class="hero__slider-dot"
+                    aria-label="Слайд 2"
+                  ></button>
+                  <button
+                    class="hero__slider-dot"
+                    aria-label="Слайд 3"
+                  ></button>
+                  <button
+                    class="hero__slider-dot"
+                    aria-label="Слайд 4"
+                  ></button>
+                  <button
+                    class="hero__slider-dot"
+                    aria-label="Слайд 5"
+                  ></button>
+                </div>
+                <button
+                  class="hero__slider-arrow hero__slider-arrow--next"
+                  aria-label="Следующий слайд"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <span class="hero__stat-number">3 000+</span>
+                <p class="hero__stat-text">
+                  объектов оснащено нашим оборудованием
+                </p>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-number">> 1 000</span>
+                <p class="hero__stat-text">
+                  партнеров используют наше оборудование
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News section -->
+      <section class="news">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              НОВОСТИ<span class="section-title-dot">.</span>
+            </h2>
+            <a href="#" class="section-link">
+              СМОТРЕТЬ ВСЕ
+              <svg
+                class="section-link-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M4.16666 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="news__grid">
+            <a href="#" class="news-card">
+              <div class="news-card__image-wrapper">
+                <img
+                  src="images/n1.png"
+                  alt="Рекомендации по выбору IP-видеокамер СферИТ серии P"
+                  class="news-card__image"
+                />
+                <span class="news-card__tag">Важная новость</span>
+                <span class="news-card__date">27.06.2024</span>
+              </div>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  Рекомендации по выбору IP-видеокамер СферИТ серии P
+                  <svg
+                    class="news-card__arrow"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19M19 12L13 6M19 12L13 18"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </h3>
+              </div>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__image-wrapper">
+                <img
+                  src="images/n2.png"
+                  alt="Видеосерверы в условиях ограничений"
+                  class="news-card__image"
+                />
+                <span class="news-card__date">27.06.2024</span>
+              </div>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  Видеосерверы в условиях ограничений
+                  <svg
+                    class="news-card__arrow"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19M19 12L13 6M19 12L13 18"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </h3>
+              </div>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__image-wrapper">
+                <img
+                  src="images/n3.png"
+                  alt="Видеосерверы в условиях ограничений"
+                  class="news-card__image"
+                />
+                <span class="news-card__date">27.06.2024</span>
+              </div>
+              <div class="news-card__content">
+                <h3 class="news-card__title">
+                  Видеосерверы в условиях ограничений
+                  <svg
+                    class="news-card__arrow"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19M19 12L13 6M19 12L13 18"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              РЕАЛИЗОВАННЫЕ ПРОЕКТЫ<span class="section-title-dot">.</span>
+            </h2>
+            <a href="#" class="section-link">
+              СМОТРЕТЬ ВСЕ
+              <svg
+                class="section-link-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M4.16666 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="projects__grid">
+            <a href="#" class="project-card">
+              <div class="project-card__image-wrapper">
+                <img
+                  src="images/p1.png"
+                  alt="IP-видеонаблюдение в бизнес центре B+. 81 IP-камера"
+                  class="project-card__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  IP-видеонаблюдение в бизнес центре B+. 81 IP-камера
+                </h3>
+                <p class="project-card__text">
+                  Знак признания высокого качества и надежности продукции
+                  компании СферИТ, а также удостоверение ее соответствия строгим
+                  требованиям в области безопасности.
+                </p>
+                <span class="project-card__date">27.06.2024</span>
+                <svg
+                  class="project-card__arrow"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M4.16666 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="project-card">
+              <div class="project-card__image-wrapper">
+                <img
+                  src="images/p2.png"
+                  alt="IP-видеонаблюдение в бизнес центре B+. 81 IP-камера"
+                  class="project-card__image"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  IP-видеонаблюдение в бизнес центре B+. 81 IP-камера
+                </h3>
+                <p class="project-card__text">
+                  Знак признания высокого качества и надежности продукции
+                  компании СферИТ, а также удостоверение ее соответствия строгим
+                  требованиям в области безопасности.
+                </p>
+                <span class="project-card__date">27.06.2024</span>
+                <svg
+                  class="project-card__arrow"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M4.16666 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact form section -->
+      <section class="contact">
+        <div class="container">
+          <div class="contact__form-wrapper">
+            <div class="contact__content">
+              <div class="contact__info">
+                <h2 class="contact__title">Задать вопрос</h2>
+                <p class="contact__text">
+                  Не знаете с чего начать? Мы пока тоже не знаем. Давайте
+                  разберемся вместе!
+                </p>
+                <div class="contact__manager">
+                  <img
+                    src="images/f.png"
+                    alt="Павел Коротков"
+                    class="contact__manager-photo"
+                  />
+                  <div class="contact__manager-info">
+                    <span class="contact__manager-name">Павел Коротков</span>
+                    <span class="contact__manager-position"
+                      >Руководитель отдела продаж</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <form class="contact__form">
+                <input
+                  type="text"
+                  class="contact__input"
+                  placeholder="Ваше имя *"
+                  required
+                />
+                <input
+                  type="email"
+                  class="contact__input"
+                  placeholder="Ваш email *"
+                  required
+                />
+                <input
+                  type="tel"
+                  class="contact__input"
+                  placeholder="Номер телефона"
+                />
+                <textarea
+                  class="contact__textarea"
+                  placeholder="Ваше сообщение *"
+                  required
+                ></textarea>
+                <div class="contact__submit-wrapper">
+                  <button type="submit" class="contact__submit">
+                    <span class="contact__submit-text">Отправить</span>
+                    <span class="contact__submit-icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.33334 8H12.6667M12.6667 8L8.66667 4M12.6667 8L8.66667 12"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <p class="contact__policy">
+                    Нажимая кнопку «Отправить» Вы принимаете условия
+                    <a href="#">Политикои конфиденциальности</a>, а также даете
+                    <a href="#"
+                      >Согласие на обработку Ваших персональных данных и их
+                      передачу</a
+                    >.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a href="/" class="footer__logo">
+              <img
+                src="images/logo_f.png"
+                alt="СферИТ"
+                class="footer__logo-img"
+              />
+            </a>
+            <p class="footer__description">
+              Разработчик и производитель оборудования для систем безопасности,
+              автоматизации и диспетчеризации
+            </p>
+          </div>
+
+          <div class="footer__nav-col">
+            <div class="footer__contacts">
+              <a href="tel:+79161578274" class="footer__phone"
+                >+7 916 157-82-74</a
+              >
+              <a href="mailto:info@sferit.com" class="footer__email"
+                >info@sferit.com</a
+              >
+              <p class="footer__address">
+                107076, г. Москва, ул. Новая Басманная, д. 14, стр. 4, офис 405
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__nav-col">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item" style="font-weight: bold">
+                <a href="#" class="footer__nav-link">Продукты и решения</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Коммутаторы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Маршрутизаторы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">WiFi</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Безопасность</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Серверы</a>
+              </li>
+              <li class="footer__nav-item" style="font-weight: bold">
+                <a href="#" class="footer__nav-link"
+                  >Реализованные<br />проекты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-col">
+            <ul class="footer__nav-list footer__nav-list-end">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Поддержка и гарантия</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Документация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Партнёрам</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Новости</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-left">
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <a href="#" class="footer__policy"
+              >Согласие на обработку персональных данных</a
+            >
+            <div class="footer__copyright">
+              © 2024 ООО «СферИТ». Все права защищены.
+            </div>
+          </div>
+          <div class="footer__developer">
+            Сайт разработки
+            <a href="#" class="footer__developer-link">
+              <img
+                src="images/logo_r.png"
+                alt="Аквилон"
+                width="80"
+                height="20"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
